@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gtfs.iml" filepath="$PROJECT_DIR$/gtfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nifi-gtfs-nar/nifi-gtfs-nar.iml" filepath="$PROJECT_DIR$/nifi-gtfs-nar/nifi-gtfs-nar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nifi-gtfs-processors/nifi-gtfs-processors.iml" filepath="$PROJECT_DIR$/nifi-gtfs-processors/nifi-gtfs-processors.iml" />
+    </modules>
+  </component>
+</project>

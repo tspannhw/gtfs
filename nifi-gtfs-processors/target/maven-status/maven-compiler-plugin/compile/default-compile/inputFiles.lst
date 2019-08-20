@@ -1,1 +1,3 @@
-/Volumes/DATA/projects/gtfs/nifi-gtfs-processors/src/main/java/y/MyProcessor.java
+/Volumes/DATA/projects/gtfs/nifi-gtfs-processors/src/main/java/dev/datainmotion/gtfs/GTFSRealTimeProcessor.java
+/Volumes/DATA/projects/gtfs/nifi-gtfs-processors/src/main/java/dev/datainmotion/gtfs/Result.java
+/Volumes/DATA/projects/gtfs/nifi-gtfs-processors/src/main/java/dev/datainmotion/gtfs/GTFSRealTimeService.java
