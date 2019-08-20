@@ -1,4 +1,11 @@
 /target/
+.idea
+*.idea*
+/.idea/
+/.idea
+.idea/
+/.idea*
+/.idea/*.*
 /target/*.*
 /.settings/
 .DS_Store
