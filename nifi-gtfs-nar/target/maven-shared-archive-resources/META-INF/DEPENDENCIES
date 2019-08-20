@@ -1,0 +1,25 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+nifi-gtfs-nar
+
+
+From: 'an unknown organization'
+  - gtfs-realtime-bindings (https://github.com/MobilityData/gtfs-realtime-bindings) io.mobilitydata.transit:gtfs-realtime-bindings:jar:0.0.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.html)
+
+From: 'Apache NiFi Project' (http://nifi.apache.org/)
+  - nifi-gtfs-processors (http://nifi.apache.org/nifi-nar-bundles/gtfs/nifi-gtfs-processors) dev.datainmotion:nifi-gtfs-processors:jar:1.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - nifi-utils (http://nifi.apache.org/nifi-commons/nifi-utils) org.apache.nifi:nifi-utils:jar:1.9.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'Google' (http://www.google.com/)
+  - Protocol Buffers [Core] (https://developers.google.com/protocol-buffers/protobuf-java/) com.google.protobuf:protobuf-java:bundle:3.6.1
+    License: 3-Clause BSD License  (https://opensource.org/licenses/BSD-3-Clause)
+
+
+
+
