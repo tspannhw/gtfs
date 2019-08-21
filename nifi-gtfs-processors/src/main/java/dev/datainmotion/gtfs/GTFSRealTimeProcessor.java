@@ -176,6 +176,7 @@ public class GTFSRealTimeProcessor extends AbstractProcessor {
                 session.transfer(flowFile, REL_FAILURE);
             } else {
                 attributes.put("gtfs.success", "true");
+                flowFile = session.putAllAttributes(flowFile, attributes);
 
                 Map<String, String> mimeAttrs = null;
                 mimeAttrs = new HashMap<String, String>() {
