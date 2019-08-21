@@ -67,26 +67,29 @@ public class GTFSRealTimeService {
         if (feed != null && feed.getEntityList() != null && feed.getEntityList().size() > 0) {
             for (GtfsRealtime.FeedEntity entity : feed.getEntityList()) {
                 if (entity != null) {
+                    boolean hasData = false;
                     Result gtfsEntity = new Result();
 
                     if (entity.hasTripUpdate()) {
-                        // System.out.println(entity.getTripUpdate());
                         gtfsEntity.setTripUpdate(entity.getTripUpdate());
+                        hasData = true;
                     }
                     if (entity.hasAlert()) {
-                        //  System.out.println(entity.getAlert());
                         gtfsEntity.setAlert(entity.getAlert());
+                        hasData = true;
                     }
                     if (entity.hasVehicle()) {
-                        //    System.out.println(entity.getVehicle());
                         gtfsEntity.setVehicle(entity.getVehicle());
+                        hasData = true;
                     }
 
-                    gtfsEntity.setId(entity.getId());
-                    gtfsEntity.setDeleted(entity.getIsDeleted());
-                    gtfsEntity.setStatus(GTFSRealTimeService.STATUS_GOOD);
-                    gtfsEntity.setStatusCode(GTFSRealTimeService.STATUS_CODE_GOOD);
-                    results.add(gtfsEntity);
+                    if ( hasData ) {
+                        gtfsEntity.setId(entity.getId());
+                        gtfsEntity.setDeleted(entity.getIsDeleted());
+                        gtfsEntity.setStatus(GTFSRealTimeService.STATUS_GOOD);
+                        gtfsEntity.setStatusCode(GTFSRealTimeService.STATUS_CODE_GOOD);
+                        results.add(gtfsEntity);
+                    }
 //                UnknownFieldSet unknownFields = entity.getUnknownFields();
 //                Map<Descriptors.FieldDescriptor, Object> allFields = entity.getAllFields();
 //                System.out.println(allFields);
