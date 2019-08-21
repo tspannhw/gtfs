@@ -3,9 +3,989 @@ SLF4J: Found binding in [jar:file:/Users/tspann/.m2/repository/ch/qos/logback/lo
 SLF4J: Found binding in [jar:file:/Users/tspann/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
-/Volumes/DATA/projects/gtfs/nifi-gtfs-processors/src/test/resources
-/Volumes/DATA/projects/gtfs/nifi-gtfs-processors/src/test/resources
-GTFS_URL
-/Volumes/DATA/projects/gtfs/nifi-gtfs-processors/src/test/resources
-GTFS_URL
-http://datamine.mta.info/mta_esi.php?key=944f5eef27b2dd6bb940baf98078c478
+java.net.MalformedURLException: no protocol: fakeurl
+	at java.net.URL.<init>(URL.java:600)
+	at java.net.URL.<init>(URL.java:497)
+	at java.net.URL.<init>(URL.java:446)
+	at dev.datainmotion.gtfs.GTFSRealTimeService.listData(GTFSRealTimeService.java:37)
+	at dev.datainmotion.gtfs.GTFSRealTimeProcessor.onTrigger(GTFSRealTimeProcessor.java:129)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.util.StandardProcessorTestRunner$RunProcessor.call(StandardProcessorTestRunner.java:255)
+	at org.apache.nifi.util.StandardProcessorTestRunner$RunProcessor.call(StandardProcessorTestRunner.java:249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Size:9
+Attribute:path = target
+Attribute:gtfs_url = fakeurl
+Attribute:gtfs.id.1 = null
+Attribute:gtfs.isdeleted.1 = false
+Attribute:filename = 77876947038936.mockFlowFile
+Attribute:gtfs.success = true
+Attribute:uuid = ba085265-e9a5-4fdf-8299-2873f5a4bdd7
+Size:9
+Attribute:gtfs.tripupdate.13 = trip {
+  trip_id: "2227"
+}
+stop_time_update {
+  stop_sequence: 3
+  arrival {
+    time: 1566393956
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "15"
+}
+
+Attribute:gtfs.isdeleted.25 = false
+Attribute:gtfs.tripupdate.14 = trip {
+  trip_id: "2260"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395259
+  }
+  departure {
+    time: 1566395400
+  }
+}
+vehicle {
+  id: "15"
+}
+
+Attribute:gtfs.isdeleted.26 = false
+Attribute:gtfs.tripupdate.11 = trip {
+  trip_id: "789"
+}
+stop_time_update {
+  stop_sequence: 3
+  arrival {
+    time: 1566393939
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "14"
+}
+
+Attribute:gtfs.isdeleted.23 = false
+Attribute:gtfs.tripupdate.12 = trip {
+  trip_id: "892"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395710
+  }
+  departure {
+    time: 1566395880
+  }
+}
+vehicle {
+  id: "14"
+}
+
+Attribute:gtfs.isdeleted.24 = false
+Attribute:gtfs.isdeleted.21 = false
+Attribute:gtfs.tripupdate.10 = trip {
+  trip_id: "1843"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566394287
+  }
+  departure {
+    time: 1566394440
+  }
+}
+vehicle {
+  id: "12"
+}
+
+Attribute:gtfs.isdeleted.22 = false
+Attribute:gtfs.isdeleted.20 = false
+Attribute:gtfs.isdeleted.29 = false
+Attribute:gtfs.isdeleted.27 = false
+Attribute:gtfs.isdeleted.28 = false
+Attribute:path = target
+Attribute:gtfs.tripupdate.19 = trip {
+  trip_id: "2968"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395282
+  }
+  departure {
+    time: 1566395640
+  }
+}
+vehicle {
+  id: "19"
+}
+
+Attribute:gtfs.tripupdate.17 = trip {
+  trip_id: "2259"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566393958
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "18"
+}
+
+Attribute:gtfs.tripupdate.18 = trip {
+  trip_id: "2948"
+}
+stop_time_update {
+  stop_sequence: 3
+  arrival {
+    time: 1566394212
+  }
+}
+stop_time_update {
+  stop_sequence: 2
+  departure {
+    time: 1566393484
+  }
+}
+vehicle {
+  id: "19"
+}
+
+Attribute:gtfs.tripupdate.15 = trip {
+  trip_id: "2949"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566394404
+  }
+  departure {
+    time: 1566394740
+  }
+}
+vehicle {
+  id: "17"
+}
+
+Attribute:gtfs.tripupdate.16 = trip {
+  trip_id: "2966"
+}
+stop_time_update {
+  stop_sequence: 3
+  departure {
+    time: 1566393418
+  }
+}
+stop_time_update {
+  stop_sequence: 4
+  arrival {
+    time: 1566394394
+  }
+}
+vehicle {
+  id: "17"
+}
+
+Attribute:gtfs.tripupdate.1 = trip {
+  trip_id: "1525"
+}
+stop_time_update {
+  stop_sequence: 5
+  departure {
+    time: 1566393486
+  }
+}
+vehicle {
+  id: "1"
+}
+
+Attribute:gtfs.isdeleted.36 = false
+Attribute:gtfs.isdeleted.37 = false
+Attribute:gtfs.tripupdate.3 = trip {
+  trip_id: "1525"
+}
+stop_time_update {
+  stop_sequence: 6
+  arrival {
+    time: 1566394094
+  }
+}
+vehicle {
+  id: "1"
+}
+
+Attribute:gtfs.isdeleted.34 = false
+Attribute:gtfs.tripupdate.2 = trip {
+  trip_id: "2884"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566394574
+  }
+  departure {
+    time: 1566395400
+  }
+}
+vehicle {
+  id: "1"
+}
+
+Attribute:gtfs.isdeleted.35 = false
+Attribute:gtfs.isdeleted.32 = false
+Attribute:gtfs.isdeleted.33 = false
+Attribute:gtfs.isdeleted.30 = false
+Attribute:gtfs.isdeleted.31 = false
+Attribute:gtfs.tripupdate.9 = trip {
+  trip_id: "2881"
+}
+stop_time_update {
+  stop_sequence: 6
+  arrival {
+    time: 1566393916
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "12"
+}
+
+Attribute:gtfs.tripupdate.8 = trip {
+  trip_id: "2883"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566393958
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "10"
+}
+
+Attribute:gtfs.tripupdate.5 = trip {
+  trip_id: "822"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566394896
+  }
+  departure {
+    time: 1566394980
+  }
+}
+vehicle {
+  id: "2"
+}
+
+Attribute:gtfs.tripupdate.4 = trip {
+  trip_id: "890"
+}
+stop_time_update {
+  stop_sequence: 4
+  arrival {
+    time: 1566393974
+  }
+}
+vehicle {
+  id: "2"
+}
+
+Attribute:gtfs.tripupdate.7 = trip {
+  trip_id: "1845"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566396507
+  }
+  departure {
+    time: 1566396840
+  }
+}
+vehicle {
+  id: "10"
+}
+
+Attribute:gtfs.isdeleted.38 = false
+Attribute:gtfs.tripupdate.6 = trip {
+  trip_id: "890"
+}
+stop_time_update {
+  stop_sequence: 3
+  departure {
+    time: 1566393505
+  }
+}
+vehicle {
+  id: "2"
+}
+
+Attribute:gtfs.isdeleted.39 = false
+Attribute:filename = 77876965506128.mockFlowFile
+Attribute:gtfs.id.12 = 892
+Attribute:gtfs.id.13 = 2227
+Attribute:gtfs.id.14 = 2260
+Attribute:gtfs.id.15 = 2949
+Attribute:gtfs.id.16 = 2966
+Attribute:gtfs.id.17 = 2259
+Attribute:gtfs.id.18 = 2948
+Attribute:gtfs.id.19 = 2968
+Attribute:gtfs.id.2 = 2884
+Attribute:gtfs_url = http://nycferry.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/tripupdate
+Attribute:gtfs.id.1 = 1525
+Attribute:gtfs.id.6 = 890
+Attribute:gtfs.id.5 = 822
+Attribute:gtfs.id.20 = 2229
+Attribute:gtfs.id.4 = 890
+Attribute:gtfs.id.21 = 2258
+Attribute:gtfs.id.3 = 1525
+Attribute:gtfs.id.22 = 1842
+Attribute:gtfs.id.9 = 2881
+Attribute:gtfs.id.8 = 2883
+Attribute:gtfs.id.7 = 1845
+Attribute:gtfs.isdeleted.14 = false
+Attribute:gtfs.isdeleted.15 = false
+Attribute:gtfs.isdeleted.12 = false
+Attribute:gtfs.isdeleted.13 = false
+Attribute:gtfs.isdeleted.10 = false
+Attribute:gtfs.isdeleted.11 = false
+Attribute:gtfs.isdeleted.18 = false
+Attribute:gtfs.isdeleted.19 = false
+Attribute:gtfs.isdeleted.16 = false
+Attribute:gtfs.isdeleted.17 = false
+Attribute:gtfs.id.10 = 1843
+Attribute:gtfs.id.11 = 789
+Attribute:gtfs.tripupdate.55 = trip {
+  trip_id: "2967"
+}
+stop_time_update {
+  stop_sequence: 1
+  departure {
+    time: 1566393833
+  }
+}
+stop_time_update {
+  stop_sequence: 2
+  arrival {
+    time: 1566394683
+  }
+}
+vehicle {
+  id: "49"
+}
+
+Attribute:gtfs.tripupdate.53 = trip {
+  trip_id: "720"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566396556
+  }
+  departure {
+    time: 1566396900
+  }
+}
+vehicle {
+  id: "48"
+}
+
+Attribute:gtfs.tripupdate.54 = trip {
+  trip_id: "467"
+}
+stop_time_update {
+  stop_sequence: 2
+  arrival {
+    time: 1566394079
+  }
+}
+vehicle {
+  id: "48"
+}
+
+Attribute:gtfs.tripupdate.51 = trip {
+  trip_id: "1830"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566396984
+  }
+  departure {
+    time: 1566396984
+  }
+}
+vehicle {
+  id: "47"
+}
+
+Attribute:gtfs.tripupdate.52 = trip {
+  trip_id: "467"
+}
+stop_time_update {
+  stop_sequence: 1
+  departure {
+    time: 1566393442
+  }
+}
+vehicle {
+  id: "48"
+}
+
+Attribute:gtfs.id.34 = 2228
+Attribute:gtfs.id.35 = 395
+Attribute:gtfs.tripupdate.50 = trip {
+  trip_id: "1829"
+}
+stop_time_update {
+  stop_sequence: 1
+  departure {
+    time: 1566393838
+  }
+}
+vehicle {
+  id: "47"
+}
+
+Attribute:gtfs.id.36 = 445
+Attribute:gtfs.id.37 = 395
+Attribute:gtfs.id.38 = 443
+Attribute:uuid = 92c60ba4-081d-45dc-9fd1-8c5130082ce1
+Attribute:gtfs.id.39 = 396
+Attribute:gtfs.isdeleted.1 = false
+Attribute:gtfs.isdeleted.2 = false
+Attribute:gtfs.id.40 = 468
+Attribute:gtfs.id.41 = 719
+Attribute:gtfs.id.42 = 397
+Attribute:gtfs.id.43 = 444
+Attribute:gtfs.id.44 = 262
+Attribute:gtfs.tripupdate.46 = trip {
+  trip_id: "337"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566396923
+  }
+  departure {
+    time: 1566396960
+  }
+}
+vehicle {
+  id: "46"
+}
+
+Attribute:gtfs.tripupdate.47 = trip {
+  trip_id: "336"
+}
+stop_time_update {
+  stop_sequence: 2
+  arrival {
+    time: 1566394324
+  }
+}
+vehicle {
+  id: "46"
+}
+
+Attribute:gtfs.tripupdate.44 = trip {
+  trip_id: "262"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566394326
+  }
+  departure {
+    time: 1566395820
+  }
+}
+vehicle {
+  id: "46"
+}
+
+Attribute:gtfs.tripupdate.45 = trip {
+  trip_id: "336"
+}
+stop_time_update {
+  stop_sequence: 1
+  departure {
+    time: 1566393657
+  }
+}
+vehicle {
+  id: "46"
+}
+
+Attribute:gtfs.tripupdate.42 = trip {
+  trip_id: "397"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395959
+  }
+  departure {
+    time: 1566396300
+  }
+}
+vehicle {
+  id: "45"
+}
+
+Attribute:gtfs.tripupdate.43 = trip {
+  trip_id: "444"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566393958
+  }
+  departure {
+    time: 1566394020
+  }
+}
+vehicle {
+  id: "45"
+}
+
+Attribute:gtfs.tripupdate.40 = trip {
+  trip_id: "468"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566396649
+  }
+  departure {
+    time: 1566396900
+  }
+}
+vehicle {
+  id: "44"
+}
+
+Attribute:gtfs.tripupdate.41 = trip {
+  trip_id: "719"
+}
+stop_time_update {
+  stop_sequence: 1
+  departure {
+    time: 1566393544
+  }
+}
+stop_time_update {
+  stop_sequence: 2
+  arrival {
+    time: 1566395718
+  }
+}
+vehicle {
+  id: "44"
+}
+
+Attribute:gtfs.id.23 = 2885
+Attribute:gtfs.id.24 = 891
+Attribute:gtfs.id.25 = 1792
+Attribute:gtfs.id.26 = 1796
+Attribute:gtfs.id.27 = 1792
+Attribute:gtfs.id.28 = 1790
+Attribute:gtfs.id.29 = 1794
+Attribute:gtfs.id.30 = 1790
+Attribute:gtfs.id.31 = 1844
+Attribute:gtfs.id.32 = 2882
+Attribute:gtfs.id.33 = 2261
+Attribute:gtfs.tripupdate.48 = trip {
+  trip_id: "1829"
+}
+stop_time_update {
+  stop_sequence: 2
+  arrival {
+    time: 1566395094
+  }
+}
+vehicle {
+  id: "47"
+}
+
+Attribute:gtfs.tripupdate.49 = trip {
+  trip_id: "1814"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395652
+  }
+  departure {
+    time: 1566395652
+  }
+}
+vehicle {
+  id: "47"
+}
+
+Attribute:gtfs.tripupdate.35 = trip {
+  trip_id: "395"
+}
+stop_time_update {
+  stop_sequence: 1
+  departure {
+    time: 1566393729
+  }
+}
+vehicle {
+  id: "41"
+}
+
+Attribute:gtfs.isdeleted.47 = false
+Attribute:gtfs.tripupdate.36 = trip {
+  trip_id: "445"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395708
+  }
+  departure {
+    time: 1566396420
+  }
+}
+vehicle {
+  id: "41"
+}
+
+Attribute:gtfs.isdeleted.48 = false
+Attribute:gtfs.tripupdate.33 = trip {
+  trip_id: "2261"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566396596
+  }
+  departure {
+    time: 1566396900
+  }
+}
+vehicle {
+  id: "40"
+}
+
+Attribute:gtfs.isdeleted.45 = false
+Attribute:gtfs.tripupdate.34 = trip {
+  trip_id: "2228"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566393958
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "40"
+}
+
+Attribute:gtfs.isdeleted.46 = false
+Attribute:gtfs.tripupdate.31 = trip {
+  trip_id: "1844"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395422
+  }
+  departure {
+    time: 1566395640
+  }
+}
+vehicle {
+  id: "38"
+}
+
+Attribute:gtfs.isdeleted.43 = false
+Attribute:gtfs.tripupdate.32 = trip {
+  trip_id: "2882"
+}
+stop_time_update {
+  stop_sequence: 3
+  arrival {
+    time: 1566393775
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "38"
+}
+
+Attribute:gtfs.isdeleted.44 = false
+Attribute:gtfs.isdeleted.41 = false
+Attribute:gtfs.tripupdate.30 = trip {
+  trip_id: "1790"
+}
+stop_time_update {
+  stop_sequence: 14
+  departure {
+    time: 1566393687
+  }
+}
+vehicle {
+  id: "28"
+}
+
+Attribute:gtfs.isdeleted.42 = false
+Attribute:gtfs.success = true
+Attribute:gtfs.isdeleted.49 = false
+Attribute:gtfs.isdeleted.40 = false
+Attribute:gtfs.tripupdate.39 = trip {
+  trip_id: "396"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566394497
+  }
+  departure {
+    time: 1566394800
+  }
+}
+vehicle {
+  id: "43"
+}
+
+Attribute:gtfs.tripupdate.37 = trip {
+  trip_id: "395"
+}
+stop_time_update {
+  stop_sequence: 2
+  arrival {
+    time: 1566393974
+  }
+}
+vehicle {
+  id: "41"
+}
+
+Attribute:gtfs.tripupdate.38 = trip {
+  trip_id: "443"
+}
+stop_time_update {
+  stop_sequence: 4
+  arrival {
+    time: 1566394050
+  }
+}
+stop_time_update {
+  stop_sequence: 3
+  departure {
+    time: 1566393506
+  }
+}
+vehicle {
+  id: "43"
+}
+
+Attribute:gtfs.tripupdate.24 = trip {
+  trip_id: "891"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566393958
+  }
+  departure {
+    time: 1566394080
+  }
+}
+vehicle {
+  id: "24"
+}
+
+Attribute:gtfs.tripupdate.25 = trip {
+  trip_id: "1792"
+}
+stop_time_update {
+  stop_sequence: 4
+  departure {
+    time: 1566393876
+  }
+}
+vehicle {
+  id: "26"
+}
+
+Attribute:gtfs.tripupdate.22 = trip {
+  trip_id: "1842"
+}
+stop_time_update {
+  stop_sequence: 3
+  arrival {
+    time: 1566393891
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "23"
+}
+
+Attribute:gtfs.tripupdate.23 = trip {
+  trip_id: "2885"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395801
+  }
+  departure {
+    time: 1566396900
+  }
+}
+vehicle {
+  id: "23"
+}
+
+Attribute:gtfs.tripupdate.20 = trip {
+  trip_id: "2229"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395331
+  }
+  departure {
+    time: 1566395940
+  }
+}
+vehicle {
+  id: "20"
+}
+
+Attribute:gtfs.isdeleted.54 = false
+Attribute:gtfs.tripupdate.21 = trip {
+  trip_id: "2258"
+}
+stop_time_update {
+  stop_sequence: 4
+  arrival {
+    time: 1566393763
+  }
+  departure {
+    time: 1566393961
+  }
+}
+vehicle {
+  id: "20"
+}
+
+Attribute:gtfs.isdeleted.55 = false
+Attribute:gtfs.isdeleted.52 = false
+Attribute:gtfs.isdeleted.53 = false
+Attribute:gtfs.isdeleted.7 = false
+Attribute:gtfs.id.45 = 336
+Attribute:gtfs.isdeleted.8 = false
+Attribute:gtfs.id.46 = 337
+Attribute:gtfs.isdeleted.9 = false
+Attribute:gtfs.id.47 = 336
+Attribute:gtfs.id.48 = 1829
+Attribute:gtfs.isdeleted.3 = false
+Attribute:gtfs.id.49 = 1814
+Attribute:gtfs.isdeleted.4 = false
+Attribute:gtfs.isdeleted.5 = false
+Attribute:gtfs.isdeleted.6 = false
+Attribute:gtfs.id.50 = 1829
+Attribute:gtfs.id.51 = 1830
+Attribute:gtfs.id.52 = 467
+Attribute:gtfs.id.53 = 720
+Attribute:gtfs.id.54 = 467
+Attribute:gtfs.id.55 = 2967
+Attribute:gtfs.isdeleted.50 = false
+Attribute:gtfs.isdeleted.51 = false
+Attribute:gtfs.tripupdate.28 = trip {
+  trip_id: "1790"
+}
+stop_time_update {
+  stop_sequence: 15
+  arrival {
+    time: 1566394013
+  }
+}
+vehicle {
+  id: "28"
+}
+
+Attribute:gtfs.tripupdate.29 = trip {
+  trip_id: "1794"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566394024
+  }
+  departure {
+    time: 1566394860
+  }
+}
+vehicle {
+  id: "28"
+}
+
+Attribute:gtfs.tripupdate.26 = trip {
+  trip_id: "1796"
+}
+stop_time_update {
+  stop_sequence: 1
+  arrival {
+    time: 1566395484
+  }
+  departure {
+    time: 1566395940
+  }
+}
+vehicle {
+  id: "26"
+}
+
+Attribute:gtfs.tripupdate.27 = trip {
+  trip_id: "1792"
+}
+stop_time_update {
+  stop_sequence: 5
+  arrival {
+    time: 1566394066
+  }
+}
+vehicle {
+  id: "26"
+}
+

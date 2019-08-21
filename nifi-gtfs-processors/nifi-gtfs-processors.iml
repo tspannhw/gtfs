@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -14,7 +15,15 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.nifi:nifi-api:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.nifi:nifi-utils:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: io.mobilitydata.transit:gtfs-realtime-bindings:0.0.5" level="project" />
-    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java-util:3.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:26.0-android" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.checkerframework:checker-compat-qual:2.5.2" level="project" />
+    <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.3.2" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.nifi:nifi-mock:1.9.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.nifi:nifi-framework-api:1.9.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.nifi:nifi-expression-language:1.9.2" level="project" />

@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: dev.datainmotion.gtfs.GTFSRealTimeProcessorTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.263 s <<< FAILURE! - in dev.datainmotion.gtfs.GTFSRealTimeProcessorTest
-testProcessorWithBadTopicName(dev.datainmotion.gtfs.GTFSRealTimeProcessorTest)  Time elapsed: 0.218 s  <<< ERROR!
-java.lang.IllegalArgumentException: argument cannot be null
-	at dev.datainmotion.gtfs.GTFSRealTimeProcessorTest.testProcessorWithBadTopicName(GTFSRealTimeProcessorTest.java:141)
-
-testProcessorWithBadURL(dev.datainmotion.gtfs.GTFSRealTimeProcessorTest)  Time elapsed: 0 s  <<< ERROR!
-java.lang.IllegalArgumentException: argument cannot be null
-	at dev.datainmotion.gtfs.GTFSRealTimeProcessorTest.testProcessorWithBadURL(GTFSRealTimeProcessorTest.java:124)
-
-testProcessor(dev.datainmotion.gtfs.GTFSRealTimeProcessorTest)  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalArgumentException: argument cannot be null
-	at dev.datainmotion.gtfs.GTFSRealTimeProcessorTest.testProcessor(GTFSRealTimeProcessorTest.java:105)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.667 s - in dev.datainmotion.gtfs.GTFSRealTimeProcessorTest

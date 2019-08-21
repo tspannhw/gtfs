@@ -7,16 +7,32 @@ nifi-gtfs-processors
 
 
 From: 'an unknown organization'
+  - FindBugs-jsr305 (http://findbugs.sourceforge.net/) com.google.code.findbugs:jsr305:jar:3.0.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Gson (https://github.com/google/gson/gson) com.google.code.gson:gson:jar:2.7
+    License: Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - error-prone annotations (http://nexus.sonatype.org/oss-repository-hosting.html/error_prone_parent/error_prone_annotations) com.google.errorprone:error_prone_annotations:jar:2.3.2
+    License: Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Guava: Google Core Libraries for Java (https://github.com/google/guava/guava) com.google.guava:guava:bundle:26.0-android
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - J2ObjC Annotations (https://github.com/google/j2objc/) com.google.j2objc:j2objc-annotations:jar:1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Protocol Buffers [Core] (https://developers.google.com/protocol-buffers/protobuf-java/) com.google.protobuf:protobuf-java:bundle:3.8.0
+    License: 3-Clause BSD License  (https://opensource.org/licenses/BSD-3-Clause)
+  - Protocol Buffers [Util] (https://developers.google.com/protocol-buffers/protobuf-java-util/) com.google.protobuf:protobuf-java-util:bundle:3.8.0
+    License: 3-Clause BSD License  (https://opensource.org/licenses/BSD-3-Clause)
   - gtfs-realtime-bindings (https://github.com/MobilityData/gtfs-realtime-bindings) io.mobilitydata.transit:gtfs-realtime-bindings:jar:0.0.5
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.html)
+  - Checker Qual (https://checkerframework.org) org.checkerframework:checker-compat-qual:jar:2.5.2
+    License: GNU General Public License, version 2 (GPL2), with the classpath exception  (http://www.gnu.org/software/classpath/license.html)    License: The MIT License  (http://opensource.org/licenses/MIT)
 
 From: 'Apache NiFi Project' (http://nifi.apache.org/)
   - nifi-utils (http://nifi.apache.org/nifi-commons/nifi-utils) org.apache.nifi:nifi-utils:jar:1.9.2
     License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
 
-From: 'Google' (http://www.google.com/)
-  - Protocol Buffers [Core] (https://developers.google.com/protocol-buffers/protobuf-java/) com.google.protobuf:protobuf-java:bundle:3.6.1
-    License: 3-Clause BSD License  (https://opensource.org/licenses/BSD-3-Clause)
+From: 'Codehaus' (http://codehaus.org)
+  - Animal Sniffer Annotations (http://mojo.codehaus.org/animal-sniffer/animal-sniffer-annotations) org.codehaus.mojo:animal-sniffer-annotations:jar:1.14
+    License: MIT license  (http://www.opensource.org/licenses/mit-license.php)
 
 
 

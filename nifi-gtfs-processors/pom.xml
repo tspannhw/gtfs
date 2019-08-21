@@ -40,6 +40,17 @@
   <artifactId>gtfs-realtime-bindings</artifactId>
   <version>0.0.5</version>
 </dependency>
+<dependency>
+  <groupId>com.google.protobuf</groupId>
+  <artifactId>protobuf-java</artifactId>
+  <version>3.8.0</version>
+</dependency>
+<dependency>
+  <groupId>com.google.protobuf</groupId>
+  <artifactId>protobuf-java-util</artifactId>
+  <version>3.8.0</version>
+</dependency>
+
         <dependency>
             <groupId>org.apache.nifi</groupId>
             <artifactId>nifi-mock</artifactId>

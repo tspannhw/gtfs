@@ -15,49 +15,7 @@ public class Result {
     private boolean isDeleted;
     private GtfsRealtime.TripUpdate tripUpdate;
     private GtfsRealtime.Alert alert;
-    private String status;
-    private int statusCode;
 
-    public Result(String key, String value, String id, boolean isDeleted, GtfsRealtime.TripUpdate tripUpdate, GtfsRealtime.Alert alert, String status, int statusCode, GtfsRealtime.VehiclePosition vehicle) {
-       super();
-       this.key = key;
-        this.value = value;
-        this.id = id;
-        this.isDeleted = isDeleted;
-        this.tripUpdate = tripUpdate;
-        this.alert = alert;
-        this.status = status;
-        this.statusCode = statusCode;
-        this.vehicle = vehicle;
-    }
-
-    public int getStatusCode() {
-        return statusCode;
-    }
-
-    public void setStatusCode(int statusCode) {
-        this.statusCode = statusCode;
-    }
-
-    public Result(String key, String value, String id, boolean isDeleted, GtfsRealtime.TripUpdate tripUpdate, GtfsRealtime.Alert alert, String status, GtfsRealtime.VehiclePosition vehicle) {
-       super();
-       this.key = key;
-        this.value = value;
-        this.id = id;
-        this.isDeleted = isDeleted;
-        this.tripUpdate = tripUpdate;
-        this.alert = alert;
-        this.status = status;
-        this.vehicle = vehicle;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
 
     public GtfsRealtime.Alert getAlert() {
         return alert;
@@ -167,10 +125,11 @@ public class Result {
         sb.append(", isDeleted=").append(isDeleted);
         sb.append(", tripUpdate=").append(tripUpdate);
         sb.append(", alert=").append(alert);
-        sb.append(", status='").append(status).append('\'');
-        sb.append(", statusCode=").append(statusCode);
         sb.append(", vehicle=").append(vehicle);
         sb.append('}');
         return sb.toString();
     }
+
+
+
 }

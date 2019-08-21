@@ -30,6 +30,8 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
 
+import static junit.framework.TestCase.assertNotNull;
+
 
 /**
  *
@@ -73,12 +75,19 @@ public class GTFSRealTimeProcessorTest {
             List<MockFlowFile> successFiles = testRunner.getFlowFilesForRelationship(GTFSRealTimeProcessor.REL_SUCCESS);
 
             for (MockFlowFile mockFile : successFiles) {
-                System.out.println("Size:" +             mockFile.getSize() ) ;
-                Map<String, String> attributes =  mockFile.getAttributes();
+               // System.out.println("Size:" +             mockFile.getSize() ) ;
 
-                for (String attribute : attributes.keySet()) {
-                    System.out.println("Attribute:" + attribute + " = " + mockFile.getAttribute(attribute));
-                }
+                assert(mockFile.getSize() > 0);
+                String result = new String(mockFile.toByteArray(), "UTF-8");
+                assertNotNull(result);
+                String trimmedResult = result.trim();
+               // System.out.println("JSON:" + trimmedResult);
+
+//                Map<String, String> attributes =  mockFile.getAttributes();
+//
+//                for (String attribute : attributes.keySet()) {
+//                    System.out.println("Attribute:" + attribute + " = " + mockFile.getAttribute(attribute));
+//                }
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -101,6 +110,26 @@ public class GTFSRealTimeProcessorTest {
 
     /**
      *
+     */
+    private void runAndAssertFail() {
+        try {
+            testRunner.setValidateExpressionUsage(false);
+            testRunner.run();
+            testRunner.assertValid();
+
+            testRunner.assertAllFlowFilesTransferred(GTFSRealTimeProcessor.REL_SUCCESS);
+            List<MockFlowFile> successFiles = testRunner.getFlowFilesForRelationship(GTFSRealTimeProcessor.REL_SUCCESS);
+
+            for (MockFlowFile mockFile : successFiles) {
+                assert(mockFile.getSize() <= 0);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     *
      * @throws Exception
      */
     @Test
@@ -110,6 +139,6 @@ public class GTFSRealTimeProcessorTest {
         testRunner.setProperty(GTFSRealTimeProcessor.GTFS_URL_NAME, FAKEURL);
         testRunner.enqueue(this.getClass().getClassLoader().getResourceAsStream("flow.txt"));
 
-        runAndAssertHappy();
+        runAndAssertFail();
     }
 }

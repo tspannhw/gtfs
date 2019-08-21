@@ -1,16 +1,18 @@
 package dev.datainmotion.gtfs;
 
-import com.google.protobuf.Descriptors;
-import com.google.protobuf.UnknownFieldSet;
+import com.google.protobuf.Message;
+import com.google.protobuf.Parser;
 import com.google.transit.realtime.GtfsRealtime;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+import com.google.protobuf.util.JsonFormat;
 
+/**
+ *
+ */
 public class GTFSRealTimeService {
 
 
@@ -21,15 +23,14 @@ public class GTFSRealTimeService {
      * @param gtfsStringURL
      * @return List<Result></Result>
      */
-    public List<Result> listData(String gtfsStringURL) {
+    public GTFS listData(String gtfsStringURL) {
 
+        GTFS gtfsData = new GTFS();
         List<Result> results = new ArrayList<Result>();
         if ( gtfsStringURL == null) {
-            Result result = new Result();
-            result.setStatus("Missing URL");
-            result.setStatusCode(500);
-            results.add(result);
-            return results;
+            gtfsData.setStatus("Missing URL");
+            gtfsData.setStatusCode(500);
+            return gtfsData;
         }
 
         URL url = null;
@@ -38,31 +39,29 @@ public class GTFSRealTimeService {
                 url = new URL(gtfsStringURL);
             }
         } catch (MalformedURLException e) {
-            e.printStackTrace();
-
-            Result result = new Result();
-            result.setStatus("Bad URL");
-            result.setStatusCode(501);
-            results.add(result);
-            return results;
+            gtfsData.setStatus("Bad URL: " + e.getLocalizedMessage());
+            gtfsData.setStatusCode(501);
+            return gtfsData;
         }
         if (url == null) {
-            Result result = new Result();
-            result.setStatus("Empty URL");
-            result.setStatusCode(502);
-            results.add(result);
-            return results;
+            gtfsData.setStatus("Empty URL");
+            gtfsData.setStatusCode(502);
+            return gtfsData;
         }
         GtfsRealtime.FeedMessage feed = null;
         try {
             feed = GtfsRealtime.FeedMessage.parseFrom(url.openStream());
+            JsonFormat.TypeRegistry registry = JsonFormat.TypeRegistry.getEmptyTypeRegistry();
+            JsonFormat.Printer printer = JsonFormat.printer().usingTypeRegistry(registry);
+            JsonFormat.Parser parser = JsonFormat.parser().usingTypeRegistry(registry);
+            Message.Builder builder = feed.newBuilderForType();
+            parser.merge(printer.print(feed), builder);
+            gtfsData.setGtfsString(printer.print(feed).toString());
         } catch (IOException e) {
             e.printStackTrace();
-            Result result = new Result();
-            result.setStatus("Not a valid GTFS Real-Time Feed");
-            result.setStatusCode(503);
-            results.add(result);
-            return results;
+            gtfsData.setStatus("Not a valid GTFS Real-Time Feed");
+            gtfsData.setStatusCode(503);
+            return gtfsData;
         }
         if (feed != null && feed.getEntityList() != null && feed.getEntityList().size() > 0) {
             for (GtfsRealtime.FeedEntity entity : feed.getEntityList()) {
@@ -86,17 +85,15 @@ public class GTFSRealTimeService {
                     if ( hasData ) {
                         gtfsEntity.setId(entity.getId());
                         gtfsEntity.setDeleted(entity.getIsDeleted());
-                        gtfsEntity.setStatus(GTFSRealTimeService.STATUS_GOOD);
-                        gtfsEntity.setStatusCode(GTFSRealTimeService.STATUS_CODE_GOOD);
                         results.add(gtfsEntity);
                     }
-//                UnknownFieldSet unknownFields = entity.getUnknownFields();
-//                Map<Descriptors.FieldDescriptor, Object> allFields = entity.getAllFields();
-//                System.out.println(allFields);
                 }
             }
+            gtfsData.setStatus(GTFSRealTimeService.STATUS_GOOD);
+            gtfsData.setStatusCode(GTFSRealTimeService.STATUS_CODE_GOOD);
+            gtfsData.setAttributes(results);
         }
 
-        return results;
+        return gtfsData;
     }
 }
